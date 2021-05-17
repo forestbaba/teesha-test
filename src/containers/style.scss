@@ -1,0 +1,21 @@
+.wrapper{
+    // padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: -25px ;
+
+    .section-1x{
+        border: 1.5px solid #0E5BF5;
+        width: 100px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 200px;
+        padding: 50px;
+        background-color: wheat;
+
+    }
+}

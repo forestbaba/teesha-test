@@ -1,0 +1,117 @@
+.quiz{
+    padding: 20px;
+    .section-1, .section-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .name{
+        font-weight: bolder;
+        font-size: medium;
+    }
+}   
+    .section-2{
+        padding: 20px 0px;
+
+        .progress{
+            width: 50px;
+            height: 50px;
+
+            text{
+                font-weight: bold;
+            }
+        }
+
+        .time-section{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-end;
+        }
+    }
+
+    .section-3{
+        p{
+            font-weight: 500;
+            text-align: left;
+            padding: 30px 0px;
+            font-size: 20px;
+        }
+        .answer-section{
+            display: flex;
+            flex-direction: column;
+
+            .option-holder{
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items:center;
+                border: 1px solid black;
+                border-radius: 3px;
+                padding: 15px;
+                margin-bottom: 20px;
+                
+
+                input{
+                    margin-top: 4px;
+                }
+
+                p{
+                     padding: 0px;
+                     margin: 0px;
+                     padding-left: 20px;
+
+                }
+            }
+
+        }
+    }
+
+    .section-4{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 40px 0px;
+
+        button{
+            // padding: 5px 35px;
+            width: 120px;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #0E5BF5;
+            color: #fff;
+            font-weight: bold;
+            border: 0;
+            outline: none;
+        }
+    }
+}
+
+@media(min-width: 768px){
+    .quiz{
+        display: grid;
+        grid-template-columns: 1fr repeat(2, minmax(auto, 35em)) 1fr;
+    }
+    .section-1{
+        grid-column: 2/4;
+    }
+    .section-2{
+        grid-column: 2/4;
+
+        .time-section{
+
+            .progress{
+            width: 70px;
+            height: 70px;
+        }
+        }
+
+        
+    }
+    .section-3{
+        grid-column: 2/4;
+    }
+    .section-4{
+        grid-column: 2/4;
+    }
+}

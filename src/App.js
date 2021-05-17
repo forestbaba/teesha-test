@@ -1,25 +1,28 @@
 import logo from './logo.svg';
-import './App.css';
+// import './App.css';
+import { HashRouter, Route, Switch, BrowserRouter } from 'react-router-dom';
+import Landing from '../src/pages/Landing';
+import Login from '../src/pages/Login';
+import Subjects from '../src/pages/Subjects/Subject'
+import Quiz from '../src/pages/Quiz/Quiz'
+import Navbar from '../src/pages/Navbar'
+import Score from '../src/pages/Score'
+// import './style.scss';
 
-function App() {
+const App =()=> {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+    <Navbar/>
+      <Switch>
+      <Route exact path="/" name="Landing Page" component={Landing}/>
+      <Route exact path="/login" name="Login Page" component={Login}/>
+      <Route exact path="/subjects" name="Subject Page" component={Subjects}/>
+      <Route exact path="/quiz" name="Quiz Page" component={Quiz}/>
+      <Route exact path="/score" name="Score" component={Score}/>
+
+      </Switch>
+    </BrowserRouter>
   );
 }
-
+ 
 export default App;
