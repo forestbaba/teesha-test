@@ -288,7 +288,7 @@ section .contentBx .formBx .sci li img{
 
     section .contentBx .formBx{
         width: 100%;
-        padding: 40px;
+        /* padding: 40px; */
         margin: 50px;
     }
     section .contentBx .formBx h3{

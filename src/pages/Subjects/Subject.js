@@ -8,6 +8,20 @@ const Subject = () => {
 
     const history = useHistory()
 
+    const [select, setSelect] = useState([])
+
+
+    const handleClick=(id)=>{
+        let index = select.filter(i => i === id) 
+        if(index.length > 0){
+            let newArr = select.filter(i => i !== id)
+            setSelect(newArr)
+        }else{
+            let newSele = [...select, id]
+            setSelect(newSele)
+        }
+    }
+
     const [subjects] = useState(subject_item)
     return (
         <div style={{ display:"flex",flexDirection:"column",alignItems:"center",  justifyContent:'center' }}>
@@ -21,8 +35,8 @@ const Subject = () => {
                     {
                         subjects.map((item, index) => {
                             return (
-                                <div className='subject_item_wrapper'>
-                                    <div className="icon_wrapper">{item.img ? <img src={item.img} style={{ width: 40, color: "red" }} /> : 'please'}</div>
+                                <div className='subject_item_wrapper' onClick={()=>handleClick(item.id)}>
+                                    <div className={select.includes(item.id) ? "icon_wrapper select" : "icon_wrapper"}>{item.img ? <img src={item.img} style={{ width: 40, color: "red" }} /> : 'please'}</div>
                                     <p>{item.title.length > 8 ? item.title.substring(0, 10) + "..." : item.title}</p>
                                 </div>
                             )

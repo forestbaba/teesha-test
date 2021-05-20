@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 // import './App.css';
 import { HashRouter, Route, Switch, BrowserRouter } from 'react-router-dom';
-import Landing from '../src/pages/Landing';
+import Landing from '../src/pages/LandingPage/Landing';
 import Login from '../src/pages/Login';
 import Subjects from '../src/pages/Subjects/Subject'
 import Quiz from '../src/pages/Quiz/Quiz'

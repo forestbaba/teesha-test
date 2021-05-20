@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@media(min-width: 768px){
+
+    .landing_parent{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        // align-items: center;
+    
+        .content {
+            display: flex;
+            flex-direction: row;
+            justify-items: space-around;
+            align-items: center;
+            padding: 20%;
+    
+            .textBox{
+                width: 50vw;
+    
+                h2{
+                    font-weight: bold;
+                    font-size: 60px;
+                }
+                .p-holder{
+                     p{
+                    padding: 10px 0px;
+                    font-size: 20px;
+                }
+                padding: 20px 0px;
+                }
+               
+    
+                a{
+                    background-color: blue;
+                    color: white;
+                    text-decoration: none;
+                    font-size: 20px;
+                    padding: 8px 25px;
+                    border-radius: 20px;
+                    margin-top: 40%;
+                }
+            }
+            img{
+                width: 50%;
+            }
+        };
+    }
+}
+@media(min-width: 375px){
+    .landing_parent{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+
+        .textBox{
+            width: 100vw;
+
+            h2{
+                font-size: 25px;
+                font-weight: bold;
+            }
+            .p-holder{
+                 p{
+                padding: 10px 0px;
+                font-size: 15px;
+            }
+            padding: 20px 0px;
+            }
+           
+
+            .learn{
+                background-color: blue;
+                color: white;
+                text-decoration: none;
+                font-size: 20px;
+                padding: 8px 25px;
+                border: none;
+                border-radius: 20px;
+                // margin-top: 40%;
+                bottom: 20px;
+                left: 20px;
+            }
+        }
+        img{
+            width: 80%;
+        }
+    }
+}
+@media(max-width: 360px){
+    .landing_parent{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+
+        .textBox{
+            width: 100vw;
+
+            h2{
+                font-size: 25px;
+                font-weight: bold;
+            }
+            .p-holder{
+                 p{
+                padding: 10px 0px;
+                font-size: 15px;
+            }
+            padding: 20px 0px;
+            }
+           
+
+            .learn{
+                background-color: blue;
+                color: white;
+                text-decoration: none;
+                font-size: 14px;
+                padding: 8px 15px;
+                border: none;
+                border-radius: 20px;
+                // margin-top: 40%;
+                bottom: 20px;
+                left: 20px;
+            }
+        }
+        img{
+            width: 80%;
+        }
+    }
+}

@@ -9,9 +9,7 @@ const  Login =()=> {
     const history = useHistory();
     return (
             <section id="login">
-                <div className="imgBx">
-                    <img src={ImageSvg}/>
-                </div>
+            
                 <div className="contentBx">
                     <div className="formBx">
                         <h2 >Login</h2>
