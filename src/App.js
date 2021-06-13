@@ -7,6 +7,9 @@ import Subjects from '../src/pages/Subjects/Subject'
 import Quiz from '../src/pages/Quiz/Quiz'
 import Navbar from '../src/pages/Navbar'
 import Score from '../src/pages/Score'
+require('dotenv').config()
+
+
 // import './style.scss';
 
 const App =()=> {

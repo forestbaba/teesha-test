@@ -5,6 +5,7 @@ import ImageSvg from '../../assets/DrawKit/5SCENE.svg';
 // import ImageSvg from '../assets/Peach/Characters/undraw_studying.svg';
 import landing from './landing.scss'
 
+// https://andrejgajdos.com/authenticating-users-in-single-page-applications-using-node-passport-react-and-redux/
 const Landing = () => {
   const history = useHistory();
   return (
@@ -20,7 +21,7 @@ const Landing = () => {
             <p>** It helps you achieve better results in and out of school
 Teeshar is what you need to stand out in your studies.</p>
           </div>
-          <button onClick={() => history.push('/login')} className="learn">Learn More</button>
+          <button onClick={() => history.push('/subjects')} className="learn">Start taking tests</button>
 
         </div>
         <img src={ImageSvg} className="starbucks" />

@@ -4,12 +4,14 @@
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
 }
   .subject_container .subject_wrapper{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .subject_container .subject_wrapper .icon_wrapper{
@@ -21,14 +23,35 @@
     border: 1px solid #0E5BF5;
     justify-content: center;
     align-content: center;
+    margin: 20px 0px;
     
 
+}
+
+.subject_container h2{
+    padding: 0px 40px;
+    font-size: 30px;
+}
+.subject_container .subject_prompt{
+   text-align: center;
+   font-size: 18px;
 }
 
 .subject_container .subject_wrapper .icon_wrapper.select{
     background-color: skyblue;
 }
 
+.button_start{
+    padding:20px 80px;
+    border-radius: 30px;
+    border:0px;
+    color: white;
+    background-color: #0E5BF5;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 20px;
+    
+}
 
 .subject_container .subject_wrapper p{
     text-align: center;
